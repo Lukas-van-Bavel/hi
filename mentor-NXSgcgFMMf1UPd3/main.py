@@ -40,9 +40,9 @@ def mijn_script(get_input, output):
             keuze = get_input(" ")
             if keuze == '1' :
                 output(f"\n")
-            elif keuze = '2' :
+            elif keuze == '2' :
                 output(f"\n")
-            elif keuze = '3' :
+            elif keuze == '3' :
                 output(f"\n")
             
         elif keuze == '2':
@@ -52,9 +52,9 @@ def mijn_script(get_input, output):
             keuze = get_input(" ")
             if keuze == '1' :
                 output(f"\n")
-            elif keuze = '2' :
+            elif keuze == '2' :
                 output(f"\n")
-            elif keuze = '3' :
+            elif keuze == '3' :
                 output(f"\n")
         elif keuze == '3':
             output("Ik heb 2 broertjes en een zusje.")
