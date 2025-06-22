@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Program Runner</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #output { white-space: pre; background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Console Program Runner</h1>
+    <button onclick="runCode()">Run Different Program</button>
+    <pre id="output"></pre>
+    <script>
+        function runCode() {
+            fetch("/run", { method: "POST" })
+                .then(response => response.json())
+                .then(data => { 
+                    document.getElementById('output').innerText = data.output || data.errors;
+                });
+        }
+    </script>
+</body>
+</html>
+
