@@ -22,8 +22,8 @@ def mijn_script(get_input, output):
 
     while True:
         output(f"\nMijn naam is Lukas van Bavel en ik ben {leeftijd} jaar oud.")
-        output("Zoals je ziet hou ik van dingen maken en dus programmeren.")
-        output("Wat wil je weten:")
+        output("Zoals u ziet hou ik van dingen maken en dus programmeren.")
+        output("Wat wil u weten:")
         output("1. Mijn schoolcarrière")
         output("2. Mijn hobby's")
         output("3. Mijn familie")
@@ -33,13 +33,34 @@ def mijn_script(get_input, output):
         if keuze == 'BT':
             return "Beëindigd."
         elif keuze == '1':
-            output("Ik zit op het gymnasium en ik hou van wiskunde en informatica.")
+            output("welk stuk je wilt u weten.")
+            output("1 basis school.")
+            output(f"\n2 tussen jaar (intermezzo).") 
+            output("3 middel bare school.")
+            keuze = get_input(" ")
+            if keuze == '1' :
+                output(f"\n")
+            elif keuze = '2'
+                output(f"\n")
+            elif keuze = '3'
+                output(f"\n")
+            
         elif keuze == '2':
-            output("Mijn hobby's zijn programmeren, gamen en muziek maken.")
+            output("wat van mijn hobbies wil je weten")
+            output("1 projecte")
+            output(f"\nsport.") 
+            keuze = get_input(" ")
+            if keuze == '1' :
+                output(f"\n")
+            elif keuze = '2'
+                output(f"\n")
+            elif keuze = '3'
+                output(f"\n")
         elif keuze == '3':
-            output("Ik heb een broer en een zus. Mijn ouders steunen mij in alles wat ik doe.")
+            output("Ik heb 2 broertjes en een zusje.")
         else:
             output("Ongeldige keuze, probeer opnieuw.")
+            output("Of er is een fout op getreden")
 
 @app.route("/")
 def index():
