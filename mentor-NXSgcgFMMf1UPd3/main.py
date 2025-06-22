@@ -1,6 +1,7 @@
 from flask import Flask, request, session, render_template_string
 import io
 import contextlib
+import os
 
 app = Flask(__name__)
 app.secret_key = "geheim123"
@@ -10,14 +11,12 @@ def mijn_script():
     code = '1234'
     code_in = ''
     while code_in != code:
-        
         print("> ", end="")
         code_in = input()
 
     print("dat is de corecte code!")
 
-
-    while True :
+    while True:
         leeftijd = 14
         print(f"Mijn naam is Lukas van Bavel en ik ben {leeftijd} jaar oud.")
         print("Zoals je ziet hou ik van dingen maken en dus programmeren.")
@@ -25,7 +24,7 @@ def mijn_script():
         print(f'1 ')
         print(f'2 ')
         while True:
-            
+            break  # Toegevoegd om oneindige loop te voorkomen
 
 @app.route("/", methods=["GET", "POST"])
 def run_script():
@@ -109,8 +108,6 @@ def run_script():
         border: none;
         z-index: 1000;
     }
-        
-    }
     .output-box {
         white-space: pre-wrap;
         word-wrap: break-word;
@@ -142,7 +139,6 @@ def run_script():
         }
     };
     </script>
-    <head>
     <meta charset="UTF-8" />
     <title>Niet-interactief tekstblok</title>
     <style>
@@ -157,13 +153,10 @@ def run_script():
         border: none;;
       }
     </style>
-    </head>
-    <body>
-
     <div class="tekstblok">
-        <p>klik op stop als je <p>
-        <p>deze pagina wil af sluiten<p>
-        <p>en typ BT <p>
+        <p>klik op stop als je </p>
+        <p>deze pagina wil af sluiten</p>
+        <p>en typ BT </p>
     </div>
     </body>
     </html>
@@ -171,4 +164,7 @@ def run_script():
 
     return render_template_string(html_template, output=output)
 
-app.run(host="0.0.0.0", port=81)
+# Alleen lokaal draaien — op Render wordt gunicorn gebruikt
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 81))
+    app.run(host="0.0.0.0", port=port)
