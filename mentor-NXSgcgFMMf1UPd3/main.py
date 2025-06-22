@@ -21,8 +21,9 @@ def mijn_script():
         print(f"Mijn naam is Lukas van Bavel en ik ben {leeftijd} jaar oud.")
         print("Zoals je ziet hou ik van dingen maken en dus programmeren.")
         print(f'wat wil he weten .')
-        print(f'1 ')
-        print(f'2 ')
+        print(f'1 mijn school cariere')
+        print(f'2 mijn hobbies')
+        print(f'3 mijn famiel')
         while True:
             break  # Toegevoegd om oneindige loop te voorkomen
 
