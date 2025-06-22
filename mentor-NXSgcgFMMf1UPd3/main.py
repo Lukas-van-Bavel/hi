@@ -9,7 +9,7 @@ app.secret_key = "geheim123"
 
 def mijn_script(get_input, output):
     output("Voer de geheime code in om verder te gaan:")
-    code = '1234'
+    code = '70767'
     while True:
         code_in = get_input("input_code")
         if code_in == 'BT':
