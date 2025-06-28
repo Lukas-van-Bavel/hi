@@ -32,40 +32,39 @@ def mijn_script(get_input, output):
         keuze = get_input("input_choice")
         if keuze == '1':
             output("welk stuk je wilt u weten.")
-            output("eerst moet u weten dat ik ben in gestroomt afgelopen jaar en dat ik op beekvliet een tussen jaar heb gedaan in plaats van groep 8")
+            output("eerst moet u weten dat ik ben in gestroomt afgelopen jaar en ik heb op beekvliet een tussen jaar heb gedaan in plaats van groep 8")
             output("1 basis school.")
             output(f"\n2 tussen jaar (intermezzo).") 
             output("3 middel bare school.")
             keuze = get_input(" ")
             if keuze == '1' :
-                output(f"\n ik heb op 2 basisscholen gezeten de driestroom van groep 1 tot 5.5 en het kindcentrum aan de oosterplas daar heb ik van groep eind 5 tot groep 7")
-                output(f"\n(mijn school cariere is zo complex dat ik he graag eenkeer wil uit leggen maar voor nu is dat echt te veel")
+                output(f"\n ik heb op 2 basisscholen gezeten de driestroom van groep 1 tot 5.5 en het kindcentrum aan de oosterplas daar heb ik van eind groep 5 tot groep 7 gezeten")
+                output(f"\n(mijn school cariere is zo complex dat ik he graag een keer wil uit leggen maar voor nu is dat echt te veel")
                 output("ik ben in plaatvan groep 8 ben ik naar intermezzo gegaan op beekvliet")
             elif keuze == '2' :
-                output(f"\n ik heb de groep 8 overgeslagen of groep 7 en 8 in een ge daan dat is voor mij zelf niet eens duidelijk")
-                output("intermetzzo eke IMZ is een tussen jaar voor lerlingen die al klaar zijn met de basis school maar nog niet klaar zijn voor de middelbare")
+                output(f"\n ik heb groep 8 overgeslagen of groep 7 en 8 in een gedaan dat is voor mij zelf niet eens duidelijk")
+                output("intermetzzo afgekort IMZ is een tussen jaar voor leerlingen die al klaar zijn met de basis school maar nog niet klaar zijn voor de middelbare school")
                 output("het was een erg bijzondere klas want we begonen met 16 leerlingen en aan het eind waren er 2 af gevallen")
             elif keuze == '3' :
-                output(f"\n nou ik heb op 2 middenbare scholen gezeeten eerst ben ik op beekvliet in de 1e gekomen om er daar na al gauw er achter te komen dat grieks en latijn toch wat et moelijk zijn")
-                output(" ik moest dus van beekvliet omdat ze aleen gymnasium hebben ik kon toen gewoon naar atheneum maar er was geen ruimte op het roden borg toen moest ik naar een HA klas op het pierson om dat de A klassen vol zaten, dit vond ik erg jammer") 
-                output("dit jaar is ook mijn frans er uit gegaan talen zijn niet mijn ding")
+                output(f"\n ik heb op 2 middenbare scholen gezeten eerst ben ik op beekvliet in de 1e gestroom van uit IMZ en daar na werd het al gauw duidelijk dat grieks en latijn toch wat et veel zijn voor mij")
+                output(" Ik moest dus van beekvliet omdat ze aleen gymnasium hebben, ik kon toen gewoon naar atheneum maar er was geen ruimte op het rodenborg toen moest ik naar een HA klas op het pierson om dat de A klassen vol zaten, dit vond ik erg jammer") 
+                output("dit jaar is ook mijn frans er uit gegaan")
             
         elif keuze == '2':
-            output("wat van mijn hobby's wil je weten")
-            output("ik hou van dingen maken denk aan progameren enzo dat noem ik zelf altijd projecten")
+            output("wat wil je weten van mijn hobby's")
+            output("ik hou van dingen maken, denk aan progameren, dat noem ik zelf altijd projecten")
             output("1 projecte")
             output(f"\n2 sport.") 
             keuze = get_input(" ")
             if keuze == '1' :
-                output(f"\nik hou van het maken van dingen denk aan progameren, bouwen bedenken enz")
-                output("ik heb erg wijde intreseses en dat zie je in mijn projecte zo ben ik nu bezig met een gimbal maar ben ik ooojk al 2 jaar met een sooort boot bezig die ik als onderzoek en project platvoorm wil gebruiken") 
-                output("druk op de invoer knop om terug tegaan")
+                output(f"\nik hou van het maken van dingen als progameren, bouwen, dingen bedenken, enz")
+                output("ik heb erg wijde intreseses en dat zie je ook in mijn projecte zo ben ik nu bezig met een gimbal maar ben ik ook al 2 jaar met een soort boot bezig die ik als project basis platvoorm wil gebruiken") 
             elif keuze == '2' :
-                output(f"\n ik hardloop en zijl echt atletiek ben ik me gestopt op dit moment")
-                output("ik zijl op een open big dat is een soort surfplank maar dan is het nog wel een soort van boot")
-                output("wij hebben thuis ook een miror dat is een helemaal houte zijl boot daar zijl ik aleen niet zo veel op")
-                output("ik hard loop erg graag ikk heb een paar jaar aan atletiek gedaan maar daar ben ik vlak voor het eide van het school jaar me gestopt")
-                output("ik ga me nu vooral op het lange afstands lopen richten ik heb laats de vesting loop me gedaan en daar heb ik de 10 km gelopen")
+                output(f"\n ik hardloop en zijl met atletiek anders dam hard lopen ben ik me gestopt")
+                output(F"\nik zijl op een open big dat is een soort surfplank maar dan is het nog wel een soort van boot (als het niet duidelijk is google dan maar)")
+                output("wij hebben thuis ook een mirror dat is een helemaal houte zijl boot daar zijl ik aleen niet zo veel op")
+                output("ik hardloop erg graag ik heb een paar jaar aan atletiek gedaan maar daar ben ik vlak voor het eide van het school jaar me gestopt")
+                output("ik ga me nu vooral op het lange afstands lopen richten, ik heb laats de vesting loop me gelopen en daar heb ik de 10 km gelopen")
             elif keuze == '3' :
                 output(f"\n                   hi dit was geen optie")
             else :
@@ -74,8 +73,9 @@ def mijn_script(get_input, output):
         elif keuze == '3':
             output("Ik heb 2 broertjes en een zusje.")
             output("ik heb een vader en een moeder")
-            output("ik heb ook de aller liefste hond van de hele wereld joep of joepie")
-            output("ik heb een opa en 2 oma's mijn opa is helaas 1,5 jaar geleden overleden")
+            output("ik heb de aller liefste hond van de hele wereld, joep of joepie")
+            output("ik heb een opa en 2 oma's ")
+            output("mijn opa is helaas 1,5 jaar geleden overleden")
             output(f"\nik heb 9 neefjes en nichtjes")
         else:
             output("Ongeldige keuze, probeer opnieuw.")
