@@ -1,3 +1,3 @@
 hi
 
-hi until c^
+hi until ^c
