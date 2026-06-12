@@ -1,3 +1,4 @@
-hi
 
-hi until ^c
+hello world
+
+hello world until ^c
